@@ -363,6 +363,12 @@ section.contact ul.list-social li.social-facebook a {
 section.contact ul.list-social li.social-facebook a:hover {
   background-color: #344e86;
 }
+section.contact ul.list-social li.social-mail a {
+  background-color: #1b926c;
+}
+section.contact ul.list-social li.social-mail a:hover {
+  background-color: #177c5c;
+}
 section.contact ul.list-social li.social-google-plus a {
   background-color: #dd4b39;
 }
