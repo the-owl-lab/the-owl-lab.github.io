@@ -50,7 +50,7 @@ p {
 // Navigation
 
 .navbar-default {
-    background-color: white;
+    background-color: @theme-primary;
     border-color: fade(@gray-darker, 5%);
     .transition-all;
     .heading-font;
@@ -75,7 +75,7 @@ p {
             }
             > a,
             > a:focus {
-                color: @gray-darker;
+                color: @theme-secondary;
                 &:hover {
                     color: @theme-primary;
                 }
@@ -83,7 +83,7 @@ p {
             &.active {
                 > a,
                 > a:focus {
-                    color: @theme-primary !important;
+                    color: white !important;
                     background-color: transparent;
                     &:hover {
                         background-color: transparent;
@@ -96,34 +96,34 @@ p {
         background-color: transparent;
         border-color: transparent;
         .navbar-header .navbar-brand {
-            color: fade(white, 70%);
+            color: white;
             &:hover,
             &:focus {
-                color: white;
+                color: @theme-primary;
             }
         }
         .nav > li > a,
         .nav > li > a:focus {
-            color: fade(white, 70%);
+            color: white;
             &:hover {
-                color: white;
+                color: @theme-primary;
             }
         }
         &.affix {
-            background-color: white;
+            background-color: @theme-primary;
             border-color: fade(@gray-darker, 10%);
             .navbar-header .navbar-brand {
-                color: @gray-darker;
+                color: white;
                 &:hover,
                 &:focus {
-                    color: @theme-primary;
+                    color: @theme-secondary;
                 }
             }
             .nav > li > a,
             .nav > li > a:focus {
-                color: @gray-darker;
+                color: white;
                 &:hover {
-                    color: @theme-primary;
+                    color: @theme-secondary;
                 }
             }
         }
@@ -137,9 +137,9 @@ header {
     width: 100%;
     min-height: auto;
     overflow-y: hidden;
-    background: url("../img/bg-pattern.png"), @theme-secondary; /* fallback for old browsers */
-    background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, @theme-secondary , @theme-tertiary); /* Chrome 10-25, Safari 5.1-6 */
-    background: url("../img/bg-pattern.png"), linear-gradient(to left, @theme-secondary , @theme-tertiary); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: url("../img/basketball.png"), @theme-secondary; /* fallback for old browsers */
+    background: url("../img/basketball.png"), -webkit-linear-gradient(to left, @theme-secondary , @theme-tertiary); /* Chrome 10-25, Safari 5.1-6 */
+    background: url("../img/basketball.png"), linear-gradient(to left, @theme-secondary , @theme-tertiary); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: white;
     .header-content {
         text-align: center;
@@ -195,7 +195,7 @@ header {
     }
     @media (min-width: 992px) {
         .header-content .header-content-inner h1 {
-            font-size: 50px;
+            font-size: 42px;
         }
     }
 }
@@ -401,8 +401,8 @@ footer {
 
 .bg-primary {
     background: @theme-primary;
-    background: -webkit-linear-gradient(@theme-primary , darken(@theme-primary, 5%));
-    background: linear-gradient(@theme-primary , darken(@theme-primary, 5%));
+    //background: -webkit-linear-gradient(@theme-primary , darken(@theme-primary, 5%));
+    //background: linear-gradient(@theme-primary , darken(@theme-primary, 5%));
 }
 
 .text-primary {
